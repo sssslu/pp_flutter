@@ -4,6 +4,7 @@ import 'sections/about_section.dart';
 import 'sections/projects_section.dart';
 import 'sections/hobby_section.dart';
 import 'sections/gallery_section.dart';
+import 'sections/perk_section.dart';
 
 void main() => runApp(const MaterialApp(home: PortfolioApp(), debugShowCheckedModeBanner: false));
 
@@ -19,12 +20,13 @@ class _PortfolioAppState extends State<PortfolioApp> {
 
   final List<Widget> _pages = const [
     AboutSection(),
+    PerkSection(),
     ProjectsSection(),
     HobbySection(),
     GallerySection(),
   ];
 
-  final List<String> _tabLabels = ["About Me", "Side Projects", "Hobby", "Gallery"];
+  final List<String> _tabLabels = ["About Me", "Perks", "Side Projects", "Hobby", "Gallery"];
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +68,8 @@ class _PortfolioAppState extends State<PortfolioApp> {
               }),
             ),
           ),
-          Expanded(child: Container(color: const Color(0xFF0a0a0a), child: _pages[_selectedIndex])),
+          Expanded(child: Container(color: const Color(0xFF000000), child: _pages[_selectedIndex])),
+          const ContactFooter(),
         ],
       ),
     );
@@ -79,22 +82,20 @@ class ContactFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF0a0a0a),
+      color: const Color(0xFF000000),
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
       child: Column(
         children: const [
+          Divider(thickness: 1, color: Colors.grey),
+          SizedBox(height: 24),
           Text(
-            'Contact',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+            "Contact",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           SizedBox(height: 8),
           Text(
-            'slu@kakao.com',
-            style: TextStyle(
-              color: Colors.blueAccent,
-              fontFamily: 'monospace',
-              fontSize: 14,
-            ),
+            "slu@kakao.com   /   +821045871127",
+            style: TextStyle(color: Colors.blueAccent, fontFamily: "monospace"),
           ),
         ],
       ),
