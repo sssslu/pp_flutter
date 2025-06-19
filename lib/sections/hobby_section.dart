@@ -22,7 +22,7 @@ class HobbySection extends StatelessWidget {
               "SNSI Indoor Freediver, Freediver, Advanced Freediver, Deep Freediver 를 순차적으로 취득.\n"
               "이후 Freediver Instructor, Advanced Freediver Instructor 강사 자격을 취득하였으며,\n"
               "프리다이빙 센터 Onedive 의 소속 강사로 활동하며 100명 이상의 한국인 및 외국인 수강생에게 자격을 부여함.\n"
-              "BLSD First Aid, EFR Life Savior 등 인명 구조 관련 자격 보유.\nCMAS 국제핀수영협회 심판관 자격(JUDGE 3급)\n2026 KUA 국가대표선발전 수중심판으로 활동하였음.\n",
+              "BLSD First Aid, EFR Life Savior 등 인명 구조 관련 자격 보유.\nCMAS 국제핀수영협회 심판관 자격(JUDGE 3급)\n2026 KUA 국가대표선발전 수중심판으로 활동하였음.",
               style: TextStyle(color: Colors.white70),
             ),
             SizedBox(height: 24),

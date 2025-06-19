@@ -26,7 +26,7 @@ class _PortfolioAppState extends State<PortfolioApp> {
     GallerySection(),
   ];
 
-  final List<String> _tabLabels = ["저는 ...", "능력치!", "사이드 프로젝트", "취미 & 특기", "갤러리"];
+  final List<String> _tabLabels = ["저는...", "능력치!", "프로젝트", "취미", "갤러리"];
 
   @override
   Widget build(BuildContext context) {
