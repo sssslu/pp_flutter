@@ -17,9 +17,9 @@ class PerkSection extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                SizedBox(height: 24),
+                SizedBox(height: 16),
                 Text(
-                  "Strengths",
+                  "강점",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
                 SizedBox(height: 8),
@@ -29,7 +29,7 @@ class PerkSection extends StatelessWidget {
                 ),
                 SizedBox(height: 24),
                 Text(
-                  "Stack",
+                  "스택",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
                 SizedBox(height: 8),

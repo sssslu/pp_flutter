@@ -17,20 +17,16 @@ class AboutSection extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                Text(
-                  "About Me",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
-                ),
                 SizedBox(height: 16),
                 Text(
-                  "Education",
+                  "학력",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
                 SizedBox(height: 8),
                 Text(
                   "창원남고등학교 졸업 / 창원남고 단결정 연구 동아리 활동 및 다회 수상\n"
                       "서울과학기술대학교 전자IT미디어공학과 졸업\n"
-                      "용산 카투사 Military Police 만기 전역\n"
+                      "용산 카투사 KATUSA Military Police 만기 전역\n"
                       "태화이노베이션 R&D 소프트웨어 연구소 연구원\n"
                       "싱가폴 암호화폐 거래소 Bitget 에서 중요직으로 근무\n"
                       "현재 속세를 떠나 특이점을 기다리는, 방구석 연구자이자 코더로 활동중입니다.",
@@ -38,7 +34,7 @@ class AboutSection extends StatelessWidget {
                 ),
                 SizedBox(height: 24),
                 Text(
-                  "Experience",
+                  "경험",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
                 SizedBox(height: 8),

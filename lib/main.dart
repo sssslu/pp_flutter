@@ -5,7 +5,7 @@ import 'sections/projects_section.dart';
 import 'sections/hobby_section.dart';
 import 'sections/gallery_section.dart';
 import 'sections/perk_section.dart';
-
+import 'package:flutter/services.dart';
 void main() => runApp(const MaterialApp(home: PortfolioApp(), debugShowCheckedModeBanner: false));
 
 class PortfolioApp extends StatefulWidget {
@@ -26,7 +26,7 @@ class _PortfolioAppState extends State<PortfolioApp> {
     GallerySection(),
   ];
 
-  final List<String> _tabLabels = ["About Me", "Perks", "Side Projects", "Hobby", "Gallery"];
+  final List<String> _tabLabels = ["저는 ...", "능력치!", "사이드 프로젝트", "취미 & 특기", "갤러리"];
 
   @override
   Widget build(BuildContext context) {
@@ -76,8 +76,21 @@ class _PortfolioAppState extends State<PortfolioApp> {
   }
 }
 
+
+
 class ContactFooter extends StatelessWidget {
   const ContactFooter({super.key});
+
+  void _copyToClipboard(BuildContext context, String text) {
+    Clipboard.setData(ClipboardData(text: text));
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('Contact Copied! : $text'),
+        duration: const Duration(seconds: 2),
+        backgroundColor: Colors.grey[800],
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -85,17 +98,37 @@ class ContactFooter extends StatelessWidget {
       color: const Color(0xFF000000),
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
       child: Column(
-        children: const [
-          Divider(thickness: 1, color: Colors.grey),
-          SizedBox(height: 24),
-          Text(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const Divider(thickness: 1, color: Colors.grey),
+          const SizedBox(height: 24),
+          const Text(
             "Contact",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
           ),
-          SizedBox(height: 8),
-          Text(
-            "slu@kakao.com   /   +821045871127",
-            style: TextStyle(color: Colors.blueAccent, fontFamily: "monospace"),
+          const SizedBox(height: 8),
+          GestureDetector(
+            onTap: () => _copyToClipboard(context, "slu@kakao.com"),
+            child: const Text(
+              "slu@kakao.com",
+              style: TextStyle(
+                color: Colors.blueAccent,
+                fontFamily: "monospace",
+                decoration: TextDecoration.underline,
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          GestureDetector(
+            onTap: () => _copyToClipboard(context, "+821045871127"),
+            child: const Text(
+              "+821045871127",
+              style: TextStyle(
+                color: Colors.blueAccent,
+                fontFamily: "monospace",
+                decoration: TextDecoration.underline,
+              ),
+            ),
           ),
         ],
       ),

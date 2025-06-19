@@ -20,7 +20,7 @@ class HeroSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               Text(
-                "Profile : Slu Park",
+                "Profile : 박 슬우",
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
