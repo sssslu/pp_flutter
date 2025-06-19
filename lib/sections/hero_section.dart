@@ -6,6 +6,7 @@ class HeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
@@ -13,34 +14,32 @@ class HeroSection extends StatelessWidget {
           colors: [Color(0xFF0f172a), Colors.black],
         ),
       ),
-      child: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
-                "Profile : 박 슬우",
-                style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: 20),
-              Text(
-                "실전 프로젝트들을 통해 성장하였고,\n""다양한 고객 관리 경험도 있는,\n""깊이 있고 열린 마음의 풀스택 개발자를 꿈꾸는 사람입니다.",
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white70,
-                  height: 1.5,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ],
+      padding: const EdgeInsets.symmetric(vertical: 300, horizontal: 24), // ✅ 넉넉한 상하 여백 추가
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: const [
+          Text(
+            "Profile : 박 슬우",
+            style: TextStyle(
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+            textAlign: TextAlign.center,
           ),
-        ),
+          SizedBox(height: 24),
+          Text(
+            "실전 프로젝트들을 통해 성장하였고,\n"
+                "다양한 고객 관리 경험도 있는,\n"
+                "깊이 있고 열린 마음의 풀스택 개발자를 꿈꾸는 사람입니다.",
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.white70,
+              height: 1.5,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ],
       ),
     );
   }

@@ -42,6 +42,8 @@ class ProjectsSection extends StatelessWidget {
         builder: (context, constraints) {
           int crossAxisCount = (constraints.maxWidth / 300).floor().clamp(1, 4);
           return GridView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: titles.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: crossAxisCount,

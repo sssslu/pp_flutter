@@ -358,6 +358,8 @@ class GallerySection extends StatelessWidget {
           int crossAxisCount = (constraints.maxWidth / 280).floor().clamp(1, 4);
 
           return GridView.builder(
+            shrinkWrap: true, // ✅ 필수
+            physics: const NeverScrollableScrollPhysics(), // ✅ 필수
             itemCount: galleryItems.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: crossAxisCount,
@@ -404,4 +406,5 @@ class GallerySection extends StatelessWidget {
       ),
     );
   }
+
 }
