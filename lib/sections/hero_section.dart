@@ -31,7 +31,7 @@ class HeroSection extends StatelessWidget {
           Text(
             "실전 프로젝트들을 통해 성장하였고,\n"
                 "다양한 고객 관리 경험도 있는,\n"
-                "깊이 있고 열린 마음의 풀스택 개발자를 꿈꾸는 사람입니다.",
+                "깊이 있고 열린 마음의\n풀스택 개발자를 꿈꾸는 사람입니다.",
             style: TextStyle(
               fontSize: 16,
               color: Colors.white70,

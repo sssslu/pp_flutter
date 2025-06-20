@@ -24,7 +24,7 @@ class PerkSection extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 Text(
-                  "창의성\n책임감\n능통한 영어",
+                  "- 창의성\n- 책임감\n- 능통한 영어",
                   style: TextStyle(color: Colors.white70),
                 ),
                 SizedBox(height: 24),

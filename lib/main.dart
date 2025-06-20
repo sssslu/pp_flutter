@@ -32,11 +32,13 @@ class _PortfolioAppState extends State<PortfolioApp> {
 
   void _onTabSelected(int index) {
     setState(() => _selectedIndex = index);
-    _scrollController.animateTo(
-      0,
-      duration: const Duration(milliseconds: 500),
-      curve: Curves.easeInOut,
-    );
+    if (index == 4) {
+      _scrollController.animateTo(
+        0,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
+      );
+    }
   }
 
   @override
