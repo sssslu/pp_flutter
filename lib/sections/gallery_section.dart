@@ -221,7 +221,7 @@ class GallerySection extends StatelessWidget {
       "description": "작품 - 죄를 사하다"
     },
     {
-      "url": "https://i.imgur.com/DQ3hB8F.png",
+      "url": "https://i.imgur.com/UUObjlX.png",
       "description": "알만자가 팔에 그려달라고 함"
     },
     {
@@ -301,7 +301,7 @@ class GallerySection extends StatelessWidget {
       "description": "병적증명서"
     },
     {
-      "url": "https://i.imgur.com/dbbgRWS.png",
+      "url": "https://i.imgur.com/ikvtDQr.png",
       "description": "최근 오픽"
     },
     {
