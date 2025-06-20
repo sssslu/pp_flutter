@@ -17,7 +17,7 @@ class GallerySection extends StatelessWidget {
       "description": "창원남고 STEAM 전국 대회"
     },
     {
-      "url": "https://i.imgur.com/C1jurry.png",
+      "url": "https://i.imgur.com/0DB6DQs.png",
       "description": "서울과학기술대학교 합격"
     },
     {
@@ -113,8 +113,8 @@ class GallerySection extends StatelessWidget {
       "description": "좋은 회사 태화이노베이션"
     },
     {
-      "url": "https://i.imgur.com/7Mox4Q1.png",
-      "description": "2022 태화 이노베이션 퇴사 (돈을 많이 벌어야 해서)"
+      "url": "https://i.imgur.com/tf2mfNZ.png",
+      "description": "2022 태화 이노베이션 퇴사 (Bitget 에서 좋은 제안)"
     },
     {
       "url": "https://i.imgur.com/JYUaxtl.png",
@@ -297,7 +297,7 @@ class GallerySection extends StatelessWidget {
       "description": "각종 수중자격들"
     },
     {
-      "url": "https://i.imgur.com/OMFaTqR.png",
+      "url": "https://i.imgur.com/Y6QeZPw.png",
       "description": "병적증명서"
     },
     {
@@ -305,7 +305,7 @@ class GallerySection extends StatelessWidget {
       "description": "최근 오픽"
     },
     {
-      "url": "https://i.imgur.com/oERT7xg.png",
+      "url": "https://i.imgur.com/WWH7gLG.png",
       "description": "졸업증명서"
     },
     {
